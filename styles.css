@@ -4,11 +4,13 @@
     box-sizing: border-box;
     
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #D3DAD9;
     color: #37353E;
+    background-color: #D3DAD9;
+}
+.homePage{  
+     
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +18,7 @@ body{
     min-height: 100vh;
 }
 
-h1{
-    text-align: center;  
-}
+
 input{
     padding: 5px;
     border-radius: 5px;
@@ -51,4 +51,30 @@ input{
 #loginbtn:hover{
     background-color: #ffffff;
     color: #44444E;
+}
+.menuBarParent{
+    display: flex;
+    justify-content: center;
+}
+
+.menuBar{
+    display: flex;
+    background-color: #37353E;
+    width: 100vh;
+    height: 50px;
+    border-radius: 999px;
+    justify-content: center;
+}
+
+.menuBar > * {
+    border-radius: 999px;
+    width: 100vh;
+    background-color: #D3DAD9;
+}
+
+.menuBar > *:hover:not(.active){
+    background-color: red;
+}
+.menuBar > *.active{
+    background-color: black;
 }
